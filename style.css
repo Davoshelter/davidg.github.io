@@ -1,0 +1,147 @@
+/* === ESTILOS GENERALES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f3f6fa;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 40px 15px;
+}
+
+.container {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 850px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+/* === CABECERA === */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #007acc;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #007acc;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contact {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.contact a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* === SECCIONES === */
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #007acc;
+  border-left: 4px solid #007acc;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item h3 {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.date {
+  float: right;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.skills {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.skills li {
+  background: #eaf4ff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: #007acc;
+  font-weight: 600;
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+footer a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+}
